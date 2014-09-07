@@ -24,11 +24,12 @@ namespace GuessThatNumber
 
                     // If input is 0, then the console application will close
                     if (input == 0)
-                        // Line break
+                        // Allows the "press any key to close the console window
                         return;
                         // Random number < text
                     else if (input < randomNumber)
                     {
+                        // Writes to the console that the guess is too low: Try again
                         Console.WriteLine("Too low, try again.");
                         ++counter;
                         continue;
@@ -53,9 +54,10 @@ namespace GuessThatNumber
                     }
                 }
             }
-        } //Random number generator with the parameters in place from 1-100(101 of course)
+        } // Random number generator with the parameters in place from 1-100(101 of course)
         static int GenerateNumber(int min, int max)
         {
+            // This keeps everything random instead of keeping the same "random" number
             Random random = new Random();
             return random.Next(min, max);
         }
