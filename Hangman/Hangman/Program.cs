@@ -40,9 +40,9 @@ namespace Hangman
 
             // Create loop while still playing game
             while (lives > 0 || !won)
-            {   
+            {
                 // Display masked word, number of guesses, letters used
-                Console.WriteLine(maskedWord (wordtoGuess, lettersGuessed));
+                Console.WriteLine(maskedWord(wordtoGuess, lettersGuessed));
                 Console.WriteLine("Lives left: " + lives);
                 Console.WriteLine("Letters guessed: " + lettersGuessed);
                 // Get a guess from the user
@@ -57,7 +57,7 @@ namespace Hangman
                 //does the word match?
                 //the word matches, display the word, congratulate the user
                 //the word does not match, subtract a guess
-                
+
             }
 
             // 
@@ -91,10 +91,10 @@ namespace Hangman
                     returnString += "_";
                 }
 
-                
+
             }
-                    //display return string
-                    return returnString;
+            //display return string
+            return returnString;
 
 
         }
